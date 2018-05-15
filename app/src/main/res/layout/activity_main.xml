@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/annapolis"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ok Darren, let's find out how much you know about your wife!"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. If she has a second child and it's a baby girl, what would she name her?"/>
+
+       <EditText
+           android:id="@+id/question_one"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:inputType="textPersonName"
+           android:hint="Write name here."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Which are her favorite places in Washington D.C. Metro Area?"/>
+
+        <CheckBox
+            android:id="@+id/question_two_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Yards"/>
+
+        <CheckBox
+            android:id="@+id/question_two_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rockville Town Square"/>
+
+        <CheckBox
+            android:id="@+id/question_two_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pike &amp; Rose"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. What does she like to do in the evenings?"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/question_three_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clean"/>
+
+            <RadioButton
+                android:id="@+id/question_three_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Code"/>
+
+            <RadioButton
+                android:id="@+id/question_three_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cook"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. If she could go on a vacation this summer, where would she really love to go?"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/question_four_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See sunflowers field in Provence"/>
+
+                <RadioButton
+                    android:id="@+id/question_four_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skiing in Vermont"/>
+
+                <RadioButton
+                    android:id="@+id/question_four_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disneyland in Florida"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get score"
+                android:onClick="getScore"/>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>
