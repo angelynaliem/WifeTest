@@ -16,7 +16,7 @@
     <string name="q4a2">Skiing in Vermont</string>
     <string name="q4a3">Disneyland in Florida</string>
     <string name="get_score">Get score</string>
-    <string name="toast">Darren, your score is</string>
+    <string name="toast">Darren, your score is\n</string>
     <string name="toast_continue">/5!</string>
     <string name="correct_name">avelyn</string>
 </resources>
