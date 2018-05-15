@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Wife Test</string>
+    <string name="intro">Ok Darren, how much do you know about your wife?</string>
+    <string name="first_question">1. If she has a baby girl, what would she name her?</string>
+    <string name="hint">Write name here.</string>
+    <string name="second_question">2. Which are her favorite places in D.C. Metro Area?</string>
+    <string name="q2a1">The Yards</string>
+    <string name="q2a2">Rockville Town Square</string>
+    <string name="q2a3"><![CDATA[Pike & Rose]]></string>
+    <string name="third_question">3. What does she like to do in the evenings?</string>
+    <string name="q3a1">Clean</string>
+    <string name="q3a2">Code</string>
+    <string name="q3a3">Cook</string>
+    <string name="fourth_question">4. Where would she love to go on her next vacation?</string>
+    <string name="q4a1">See sunflowers field in Provence</string>
+    <string name="q4a2">Skiing in Vermont</string>
+    <string name="q4a3">Disneyland in Florida</string>
+    <string name="get_score">Get score</string>
+    <string name="toast">Darren, your score is</string>
+    <string name="toast_continue">/5!</string>
+    <string name="correct_name">avelyn</string>
 </resources>

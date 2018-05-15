@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,81 +14,106 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/annapolis"
+            android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            android:adjustViewBounds="true" />
+            android:src="@drawable/annapolis" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ok Darren, let's find out how much you know about your wife!"/>
+            android:padding="@dimen/padding"
+            android:text="@string/intro"
+            android:textSize="@dimen/intro_size"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. If she has a second child and it's a baby girl, what would she name her?"/>
+            android:layout_marginTop="@dimen/margin_top"
+            android:padding="@dimen/padding"
+            android:text="@string/first_question"
+            android:textColor="@color/colorAccent" />
 
-       <EditText
-           android:id="@+id/question_one"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:inputType="textPersonName"
-           android:hint="Write name here."/>
+        <EditText
+            android:id="@+id/question_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:hint="@string/hint"
+            android:inputType="textPersonName"
+            android:padding="@dimen/padding"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/question_size" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2. Which are her favorite places in Washington D.C. Metro Area?"/>
+            android:layout_marginTop="@dimen/margin_top"
+            android:padding="@dimen/padding"
+            android:text="@string/second_question"
+            android:textColor="@color/colorAccent" />
 
         <CheckBox
             android:id="@+id/question_two_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The Yards"/>
+            android:padding="@dimen/padding"
+            android:text="@string/q2a1" />
 
         <CheckBox
             android:id="@+id/question_two_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rockville Town Square"/>
+            android:padding="@dimen/padding"
+            android:text="@string/q2a2" />
 
         <CheckBox
             android:id="@+id/question_two_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pike &amp; Rose"/>
+            android:padding="@dimen/padding"
+            android:text="@string/q2a3" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3. What does she like to do in the evenings?"/>
+            android:layout_marginTop="@dimen/margin_top"
+            android:padding="@dimen/padding"
+            android:text="@string/third_question"
+            android:textColor="@color/colorAccent" />
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/question_three_one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Clean"/>
+                android:padding="@dimen/padding"
+                android:text="@string/q3a1" />
 
             <RadioButton
                 android:id="@+id/question_three_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Code"/>
+                android:padding="@dimen/padding"
+                android:text="@string/q3a2" />
 
             <RadioButton
                 android:id="@+id/question_three_three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cook"/>
+                android:padding="@dimen/padding"
+                android:text="@string/q3a3" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4. If she could go on a vacation this summer, where would she really love to go?"/>
+                android:layout_marginTop="@dimen/margin_top"
+                android:padding="@dimen/padding"
+                android:text="@string/fourth_question"
+                android:textColor="@color/colorAccent" />
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -99,28 +123,34 @@
                     android:id="@+id/question_four_one"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="See sunflowers field in Provence"/>
+                    android:padding="@dimen/padding"
+                    android:text="@string/q4a1" />
 
                 <RadioButton
                     android:id="@+id/question_four_two"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Skiing in Vermont"/>
+                    android:padding="@dimen/padding"
+                    android:text="@string/q4a2" />
 
                 <RadioButton
                     android:id="@+id/question_four_three"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Disneyland in Florida"/>
+                    android:padding="@dimen/padding"
+                    android:text="@string/q4a3" />
 
             </RadioGroup>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Get score"
-                android:onClick="getScore"/>
-
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/margin_top"
+                android:onClick="getScore"
+                android:padding="@dimen/padding"
+                android:text="@string/get_score" />
 
         </RadioGroup>
 

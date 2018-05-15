@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void getScore (View view) {
+    public void getScore(View view) {
 
         EditText pickQuestionOne = question_one;
         Editable nameEditable = question_one.getText();
@@ -57,10 +57,14 @@ public class MainActivity extends AppCompatActivity {
         boolean pickQuestionFourTwo = question_four_two.isChecked();
         boolean pickQuestionFourThree = question_four_three.isChecked();
 
-        int score = getFinalScore (pickQuestionOne, pickQuestionTwoOne,pickQuestionTwoTwo,pickQuestionTwoThree,pickQuestionThreeOne,pickQuestionThreeTwo, pickQuestionThreeThree, pickQuestionFourOne, pickQuestionFourTwo, pickQuestionFourThree);
+        int score = getFinalScore(pickQuestionOne, pickQuestionTwoOne, pickQuestionTwoTwo, pickQuestionTwoThree, pickQuestionThreeOne, pickQuestionThreeTwo, pickQuestionThreeThree, pickQuestionFourOne, pickQuestionFourTwo, pickQuestionFourThree);
+
+        /**
+         * Displays the result and score of the quiz.
+         */
 
         Context context = getApplicationContext();
-        CharSequence text = "Darren, your score is" + score + "/5!";
+        CharSequence text = getString(R.string.toast) + score + getString(R.string.toast_continue);
         int duration = Toast.LENGTH_LONG;
 
         Toast toast = Toast.makeText(context, text, duration);
@@ -72,7 +76,11 @@ public class MainActivity extends AppCompatActivity {
 
         int score = 0;
 
-        if (pickQuestionOne.getText().toString().equalsIgnoreCase("avelyn")) {
+        /**
+         * Adds 1 point for correct answers and 0 point if incorrect answers are picked.
+         */
+
+        if (pickQuestionOne.getText().toString().equalsIgnoreCase(getString(R.string.correct_name))) {
             score = score + 1;
         }
 
