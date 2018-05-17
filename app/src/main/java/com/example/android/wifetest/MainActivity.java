@@ -84,27 +84,15 @@ public class MainActivity extends AppCompatActivity {
             score = score + 1;
         }
 
-        if (pickQuestionTwoOne) {
+        if (pickQuestionTwoOne && !pickQuestionTwoTwo && pickQuestionTwoThree) {
+            score = score + 2;
+        } else if (pickQuestionTwoOne || pickQuestionTwoThree) {
             score = score + 1;
-        }
-
-        if (pickQuestionTwoTwo) {
-            score = score + 0;
-        }
-
-        if (pickQuestionTwoThree) {
-            score = score + 1;
-        }
-
-        if (pickQuestionThreeOne) {
-            score = score + 0;
         }
 
         if (pickQuestionThreeTwo) {
             score = score + 1;
-        }
-
-        if (pickQuestionThreeThree) {
+        } else if (pickQuestionThreeOne || pickQuestionThreeThree) {
             score = score + 0;
         }
 
